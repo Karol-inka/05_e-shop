@@ -5,3 +5,21 @@ body {
 h1 {
     text-align: center;
 }
+
+.dropdown-menu img {
+    height: 65px;
+}
+
+form {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    width: 200px;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-select {
+    width: 200px;
+}

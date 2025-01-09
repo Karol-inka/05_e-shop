@@ -12,18 +12,33 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-      <form class="d-flex" role="search">
+      <form class="d-flex " role="search">
         <input class="form-control me-2" type="search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Hledat</button>
       </form>
-      <a class="navbar-brand" href="#">Košík <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-          fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
-          <path
-            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
-        </svg></a>
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Košík <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><img src="img/7.jpg" alt="">
+                <p>Náušnice s ametystem</p>
+              </a></li>
+            <li><a class="dropdown-item" href="#"><img src="img/1.jpg" alt="">
+                <p>Náramek s ametystem</p>
+              </a></li>
+          </ul>
+        </li>
+      </ul>
+
     </div>
   </nav>
 
@@ -31,21 +46,172 @@
     <h1>PRODUKTY</h1>
   </div>
 
-  <section>
-    <a href=""></a>
+  <div class="razeni d-flex p-3"> 
+     <h5>Řadit podle:</h5>
+  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+    <option>-</option>
+    <option value="1">Sestupně</option>
+    <option value="2">Vzestupně</option>
+    <option value="3">a-z</option>
+  </select>
+</div>
+
+
+
+  <section class="d-flex p-5">
+
+    <div class="filtr" >
+      <form class="form">
+        <h2>Filtrace</h2>
+        <div class="dostupnost">
+          <h4>Dostupnost</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              "Na zakázku"
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Ihned k odeslání
+            </label>
+          </div>
+        </div>
+  
+        <div class="cena">
+          <h4>Cena</h4>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
+          </div>
+          <p>-</p>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea2" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea2"></textarea>
+          </div>
+        </div>
+  
+  
+        <div class="Typ">
+          <h4>Typ</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Řetízek
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Náramek
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Prstýnek
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4">
+              Naušnice
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+            <label class="form-check-label" for="flexRadioDefault5">
+              Přívěšek
+            </label>
+          </div>
+        </div>
+  
+        <div class="barva">
+          <h4>Barva</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+            <label class="form-check-label" for="flexCheckDefault6">
+              Zelená
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+            <label class="form-check-label" for="flexCheckChecked7">
+              Modrá
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
+            <label class="form-check-label" for="flexCheckChecked8">
+              Růžová
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9">
+            <label class="form-check-label" for="flexCheckChecked9">
+              Fialová
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked0">
+            <label class="form-check-label" for="flexCheckChecked0">
+              Žlutá
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked01">
+            <label class="form-check-label" for="flexCheckChecked01">
+              Bílá/Černá
+            </label>
+          </div>
+        </div>
+
+        <div class="mineral">
+          <h4>Minerál</h4>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault02">
+            <label class="form-check-label" for="flexCheckDefault02">
+              Ametyst
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked03">
+            <label class="form-check-label" for="flexCheckChecked03">
+              Citrín
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked04">
+            <label class="form-check-label" for="flexCheckChecked04">
+              Křemen
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked05">
+            <label class="form-check-label" for="flexCheckChecked05">
+              Měsíční kámen
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+    
     <div class="produkty">
-      <div class="row row-gap-4 p-3">
+       <div class="row row-gap-4 p-3">
         <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
+              <div class="card">
             <img src="img/1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Náramek s ametystem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
                 content.</p>
               <a href="#" class="btn btn-primary">Přidat do košíku</a>
             </div>
           </div>
         </div>
+
 
         <div class="col-md-6 col-lg-4 d-flex justify-content-center">
           <div class="card">
@@ -230,4 +396,4 @@
     crossorigin="anonymous"></script>
 </body>
 
-</html> 
+</html>
