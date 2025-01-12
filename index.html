@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cs-CZ">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -15,11 +15,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-      <form class="d-flex " role="search">
-        <input class="form-control me-2" type="search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Hledat</button>
-      </form>
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav me-auto justify-content-center">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Košík <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
@@ -35,354 +31,417 @@
             <li><a class="dropdown-item" href="#"><img src="img/1.jpg" alt="">
                 <p>Náramek s ametystem</p>
               </a></li>
+            <li><a href="#">Přejít do košíku</a></li>
           </ul>
         </li>
       </ul>
-
+      <form class="d-flex " role="search">
+        <input class="form-control me-2" type="search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Hledat</button>
+      </form>
     </div>
   </nav>
+
+
 
   <div class="container p-3">
     <h1>PRODUKTY</h1>
   </div>
 
-  <div class="razeni d-flex p-3"> 
-     <h5>Řadit podle:</h5>
-  <select class="form-select form-select-lg mb-3" aria-label="Large select example">
-    <option>-</option>
-    <option value="1">Sestupně</option>
-    <option value="2">Vzestupně</option>
-    <option value="3">a-z</option>
-  </select>
-</div>
+  <section class="d-flex flex-column p-5">
 
-
-
-  <section class="d-flex p-5">
-
-    <div class="filtr" >
-      <form class="form">
-        <h2>Filtrace</h2>
-        <div class="dostupnost">
-          <h4>Dostupnost</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              "Na zakázku"
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-            <label class="form-check-label" for="flexCheckChecked">
-              Ihned k odeslání
-            </label>
-          </div>
-        </div>
-  
-        <div class="cena">
-          <h4>Cena</h4>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea1"></textarea>
-          </div>
-          <p>-</p>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea2" class="form-label"></label>
-            <textarea class="form-control" id="exampleFormControlTextarea2"></textarea>
-          </div>
-        </div>
-  
-  
-        <div class="Typ">
-          <h4>Typ</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-            <label class="form-check-label" for="flexRadioDefault1">
-              Řetízek
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-            <label class="form-check-label" for="flexRadioDefault2">
-              Náramek
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-            <label class="form-check-label" for="flexRadioDefault3">
-              Prstýnek
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-            <label class="form-check-label" for="flexRadioDefault4">
-              Naušnice
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-            <label class="form-check-label" for="flexRadioDefault5">
-              Přívěšek
-            </label>
-          </div>
-        </div>
-  
-        <div class="barva">
-          <h4>Barva</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
-            <label class="form-check-label" for="flexCheckDefault6">
-              Zelená
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
-            <label class="form-check-label" for="flexCheckChecked7">
-              Modrá
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
-            <label class="form-check-label" for="flexCheckChecked8">
-              Růžová
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9">
-            <label class="form-check-label" for="flexCheckChecked9">
-              Fialová
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked0">
-            <label class="form-check-label" for="flexCheckChecked0">
-              Žlutá
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked01">
-            <label class="form-check-label" for="flexCheckChecked01">
-              Bílá/Černá
-            </label>
-          </div>
-        </div>
-
-        <div class="mineral">
-          <h4>Minerál</h4>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault02">
-            <label class="form-check-label" for="flexCheckDefault02">
-              Ametyst
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked03">
-            <label class="form-check-label" for="flexCheckChecked03">
-              Citrín
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked04">
-            <label class="form-check-label" for="flexCheckChecked04">
-              Křemen
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked05">
-            <label class="form-check-label" for="flexCheckChecked05">
-              Měsíční kámen
-            </label>
-          </div>
-        </div>
-      </form>
+    <div class="razeni ms-auto p-3">
+      <h5>Řadit podle:</h5>
+      <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+        <option>-</option>
+        <option value="1">Sestupně</option>
+        <option value="2">Vzestupně</option>
+        <option value="3">a-z</option>
+      </select>
     </div>
-    
-    <div class="produkty">
-       <div class="row row-gap-4 p-3">
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-              <div class="card">
-            <img src="img/1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Náramek s ametystem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+
+    <div class="d-flex">
+      <div class="filtr">
+        <form class="form">
+          <div class="dostupnost">
+            <h4>Dostupnost</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                "Na zakázku"
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+              <label class="form-check-label" for="flexCheckChecked">
+                Ihned k odeslání
+              </label>
             </div>
           </div>
-        </div>
 
-
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Náramek z modrého křemene se znamením</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="cena">
+            <h4>Cena</h4>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="od"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea2" class="form-label"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea2" placeholder="do"></textarea>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Naušnice s perlou</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+
+          <div class="Typ">
+            <h4>Typ</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                Řetízek
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+                Náramek
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <label class="form-check-label" for="flexRadioDefault3">
+                Prstýnek
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+              <label class="form-check-label" for="flexRadioDefault4">
+                Naušnice
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+              <label class="form-check-label" for="flexRadioDefault5">
+                Přívěšek
+              </label>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Řetízek s přívěskem z modrých korálků</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+
+          <div class="barva">
+            <h4>Barva</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+              <label class="form-check-label" for="flexCheckDefault6">
+                Zelená
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+              <label class="form-check-label" for="flexCheckChecked7">
+                Modrá
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8">
+              <label class="form-check-label" for="flexCheckChecked8">
+                Růžová
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked9">
+              <label class="form-check-label" for="flexCheckChecked9">
+                Fialová
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked0">
+              <label class="form-check-label" for="flexCheckChecked0">
+                Žlutá
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked01">
+              <label class="form-check-label" for="flexCheckChecked01">
+                Bílá/Černá
+              </label>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Řetízek se zeleným srdíčkem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="mineral">
+            <h4>Minerál</h4>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault02">
+              <label class="form-check-label" for="flexCheckDefault02">
+                Ametyst
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked03">
+              <label class="form-check-label" for="flexCheckChecked03">
+                Citrín
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked04">
+              <label class="form-check-label" for="flexCheckChecked04">
+                Křemen
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked05">
+              <label class="form-check-label" for="flexCheckChecked05">
+                Měsíční kámen/Láva
+              </label>
             </div>
           </div>
-        </div>
+        </form>
+      </div>
 
-
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Růžový náhrdelník s perlami</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+      <div class="produkty">
+        <div class="row row-gap-4 p-3">
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/1.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Náramek s ametystem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex p-3">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>100,-</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/7.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Naušnice s ametystem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/2.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Náramek z křemene se znamením</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>120,-</p>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/8.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Řetízek s přívěskem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/3.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Naušnice s perlou</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>300,-</p>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/9.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Prstýnek s perlou</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/4.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Řetízek s přívěskem z modrých korálků</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>200,-</p>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/10.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Prstýnek s modrými korálky</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/5.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Řetízek se zeleným srdíčkem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>250,-</p>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/11.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Prstýnek se zelenými kamínky</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/6.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Růžový náhrdelník s perlami</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>450,-</p>
+                </div>
+
+              </div>
             </div>
           </div>
-        </div>
 
-
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/12.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Prstýnek s ametystem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/7.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Naušnice s ametystem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>500,-</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/13.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Přívěšek s ametystem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/8.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Řetízek s přívěskem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>300,-</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/14.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Přívěšek s citrínem</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/9.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Prstýnek s perlou</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a><p>300,-</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-          <div class="card">
-            <img src="img/15.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Párové přívěšky</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Přidat do košíku</a>
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/10.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Prstýnek s modrými korálky</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>250,-</p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/11.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Prstýnek se zelenými kamínky</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>250,-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/12.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Prstýnek s ametystem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>250,-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/13.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Přívěšek s ametystem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>150,-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/14.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Přívěšek s citrínem</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>150,-</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="card">
+              <a href="product.html"><img src="img/15.jpg" class="card-img-top" alt="..."></a>
+              <div class="card-body">
+                <h5 class="card-title">Párové přívěšky</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's
+                  content.</p>
+                <div class="d-flex">
+                  <a href="#" class="btn btn-info">Přidat do košíku</a>
+                  <p>250,.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
-
-
       </div>
     </div>
   </section>

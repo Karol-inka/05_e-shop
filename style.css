@@ -23,3 +23,12 @@ textarea {
 .form-select {
     width: 200px;
 }
+
+.produkt img {
+    height: 300px;
+    width: auto;
+}
+
+p {
+    font-size: 20px;
+}
