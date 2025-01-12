@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs-CZ">
 
 <head>
   <meta charset="utf-8">
@@ -14,7 +14,7 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
       <ul class="navbar-nav me-auto justify-content-center">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -25,13 +25,16 @@
             </svg>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#"><img src="img/7.jpg" alt="">
+            <li><a class="dropdown-item d-flex p-1" href="#"><img src="img/7.jpg" alt="">
                 <p>Náušnice s ametystem</p>
               </a></li>
-            <li><a class="dropdown-item" href="#"><img src="img/1.jpg" alt="">
+            <li><a class="dropdown-item d-flex p-1" href="#"><img src="img/1.jpg" alt="">
                 <p>Náramek s ametystem</p>
               </a></li>
-            <li><a href="#">Přejít do košíku</a></li>
+            <li class="d-flex justify-content-between p-2">
+              <button type="button" class="btn btn-info">Košík</button>
+              <p><b>Celkem: 600,-</b></p>
+            </li>
           </ul>
         </li>
       </ul>
@@ -124,6 +127,12 @@
                 Přívěšek
               </label>
             </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault25">
+              <label class="form-check-label" for="flexRadioDefault25">
+                Náhrdelník
+              </label>
+            </div>
           </div>
 
           <div class="barva">
@@ -203,12 +212,10 @@
               <a href="product.html"><img src="img/1.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Náramek s ametystem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex p-3">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>100,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Náramek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">100,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -219,12 +226,10 @@
             <div class="card">
               <a href="product.html"><img src="img/2.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">Náramek z křemene se znamením</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>120,-</p>
+                <h5 class="card-title">Náramek z křemene</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Náramek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">120,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
                 </div>
 
               </div>
@@ -236,11 +241,11 @@
               <a href="product.html"><img src="img/3.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Naušnice s perlou</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>300,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Náušnice</h6>
+
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">300,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
 
               </div>
@@ -251,12 +256,11 @@
             <div class="card">
               <a href="product.html"><img src="img/4.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">Řetízek s přívěskem z modrých korálků</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>200,-</p>
+                <h5 class="card-title">Řetízek s modrým přívěskem</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Řetízek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">200,-</p> <a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
 
               </div>
@@ -268,11 +272,10 @@
               <a href="product.html"><img src="img/5.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Řetízek se zeleným srdíčkem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>250,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Řetízek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">250,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
 
               </div>
@@ -285,11 +288,11 @@
               <a href="product.html"><img src="img/6.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Růžový náhrdelník s perlami</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex p-3"> <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>450,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Náhrdelník</h6>
+
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">450,-</p> <a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
 
               </div>
@@ -301,12 +304,10 @@
               <a href="product.html"><img src="img/7.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Naušnice s ametystem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>500,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Náušnice</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">500,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -317,12 +318,11 @@
               <a href="product.html"><img src="img/8.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Řetízek s přívěskem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>300,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Řetízek</h6>
+
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">300,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -333,11 +333,9 @@
               <a href="product.html"><img src="img/9.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Prstýnek s perlou</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a><p>300,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prstýnek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">300,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
                 </div>
               </div>
             </div>
@@ -347,13 +345,11 @@
             <div class="card">
               <a href="product.html"><img src="img/10.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">Prstýnek s modrými korálky</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>250,-</p>
+                <h5 class="card-title">Prstýnek s korálky</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prstýnek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">250,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -363,13 +359,11 @@
             <div class="card">
               <a href="product.html"><img src="img/11.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <h5 class="card-title">Prstýnek se zelenými kamínky</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>250,-</p>
+                <h5 class="card-title">Prstýnek s kamínky</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prstýnek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">250,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -381,12 +375,10 @@
               <a href="product.html"><img src="img/12.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Prstýnek s ametystem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>250,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Prstýnek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">250,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -397,12 +389,10 @@
               <a href="product.html"><img src="img/13.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Přívěšek s ametystem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>150,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Přívěšek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">150,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -413,12 +403,10 @@
               <a href="product.html"><img src="img/14.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Přívěšek s citrínem</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>150,-</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Přívěšek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">150,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
@@ -429,12 +417,10 @@
               <a href="product.html"><img src="img/15.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">Párové přívěšky</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
-                <div class="d-flex">
-                  <a href="#" class="btn btn-info">Přidat do košíku</a>
-                  <p>250,.</p>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Přívěšek</h6>
+                <div class="d-flex justify-content-between">
+                  <p class="text-danger">250,-</p><a href="#" class="btn btn-info">Přidat do košíku</a>
+
                 </div>
               </div>
             </div>
