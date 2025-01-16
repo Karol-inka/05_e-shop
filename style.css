@@ -44,3 +44,8 @@ h1 {
 .dropdown-menu {
     width: 400px;
 }
+
+.kosicek img {
+    height: 200px;
+    width: auto;
+}
