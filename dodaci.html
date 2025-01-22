@@ -53,7 +53,7 @@
     <div class="p-4">
         <div class="container p-3 bg-light">
             <div class="d-flex justify-content-between p-1">
-                <div class="d-flex">
+                <div class="d-flex d-none d-lg-block">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-1-circle" viewBox="0 0 16 16">
                         <path
@@ -62,9 +62,11 @@
                     <p>Košík</p>
                 </div>
                 <div class="d-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
-                      </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z" />
+                    </svg>
                     <p><b>Dodací údaje</b></p>
                 </div>
                 <div class="d-flex">
@@ -76,17 +78,56 @@
                     </svg>
                     <p>Doprava a platba</p>
                 </div>
-                <div class="d-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-4-circle" viewBox="0 0 16 16">
-                        <path d="M7.519 5.057q.33-.527.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218"/>
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8"/>
-                      </svg>
+                <div class="d-flex  d-none d-lg-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-4-circle" viewBox="0 0 16 16">
+                        <path
+                            d="M7.519 5.057q.33-.527.657-1.055h1.933v5.332h1.008v1.107H10.11V12H8.85v-1.559H4.978V9.322c.77-1.427 1.656-2.847 2.542-4.265ZM6.225 9.281v.053H8.85V5.063h-.065c-.867 1.33-1.787 2.806-2.56 4.218" />
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                    </svg>
                     <p>Shrnutí objednávky</p>
                 </div>
 
-              <a href="platba.html" class="btn btn-info">Pokračovat v objednávce</a>
+                <div class="d-flex">
+                    <form class="row g-3">
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Jméno</label>
+                            <input type="text" class="form-control" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="inputEmail4" class="form-label">Příjmení</label>
+                            <input type="text" class="form-control" aria-label="Last name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone" class="form-label">Telefonní číslo</label>
+                            <input type="email" class="form-control" id="phone">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Město</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">Ulice, PSČ</label>
+                            <input type="text" class="form-control" id="inputState">
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">PSČ</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                    </form>
+                </div>
+
+                <a href="platba.html" class="btn btn-info">Pokračovat v objednávce</a>
+            </div>
         </div>
-    </div>
     </div>
 
     <footer>

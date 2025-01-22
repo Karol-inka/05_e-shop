@@ -69,7 +69,7 @@
                     </svg>
                     <p>Dodací údaje</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex d-none d-lg-block">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-3-circle" viewBox="0 0 16 16">
                         <path
@@ -78,7 +78,7 @@
                     </svg>
                     <p>Doprava a platba</p>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex d-none d-lg-block">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         class="bi bi-4-circle" viewBox="0 0 16 16">
                         <path
@@ -88,35 +88,54 @@
                     <p>Shrnutí objednávky</p>
                 </div>
 
-                <div class="d-flex row row-gap-3">
-                    <div class="kosicek p-3">
-                        <img src="img/1.jpg">
-                        <button type="button" class="btn btn-outline-danger">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle"
-                                viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                                <path
-                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="kosicek d-flex justify-content-between p-3 align-items-center border-bottom border-3">
-                        <img src="img/7.jpg" alt="">
-                        <p>Naušnice s ametystem</p>
-                        <p><b>500 Kč</b></p>
-                        <div class="d-flex align-items-center p-3">
-                            <button type="button" class="btn btn-secondary">-</button><p class="m-0 p-3">1</p><button type="button" class="btn btn-secondary">+</button>
+                <div>
+                    <div class="d-flex flex-column">
+                        <div
+                            class="kosicek d-flex justify-content-between p-3 align-items-center border-bottom border-3">
+                            <img src="img/1.jpg" alt="">
+                            <p>Náramek s ametystem</p>
+                            <p><b>100 Kč</b></p>
+                            <div class="d-flex align-items-center p-3">
+                                <button type="button" class="btn btn-secondary">-</button>
+                                <p class="m-0 p-3">1</p><button type="button" class="btn btn-secondary">+</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="kosicek d-flex justify-content-between p-3 align-items-center border-bottom border-3">
-                        <img src="img/15.jpg" alt="">
-                        <p>Párové přívěšky</p>
-                        <p><b>250 Kč</b></p>
-                        <div class="d-flex align-items-center p-3">
-                            <button type="button" class="btn btn-secondary">-</button><p class="m-0 p-3">1</p><button type="button" class="btn btn-secondary">+</button>
+                        <div
+                            class="kosicek d-flex justify-content-between p-3 align-items-center border-bottom border-3">
+                            <img src="img/7.jpg" alt="">
+                            <p>Naušnice s ametystem</p>
+                            <p><b>500 Kč</b></p>
+                            <div class="d-flex align-items-center p-3">
+                                <button type="button" class="btn btn-secondary">-</button>
+                                <p class="m-0 p-3">1</p><button type="button" class="btn btn-secondary">+</button>
+                            </div>
                         </div>
+                        <div
+                            class="kosicek d-flex justify-content-between p-3 align-items-center border-bottom border-3">
+                            <img src="img/15.jpg" alt="">
+                            <p>Párové přívěšky</p>
+                            <p><b>250 Kč</b></p>
+                            <div class="d-flex align-items-center p-3">
+                                <button type="button" class="btn btn-secondary">-</button>
+                                <p class="m-0 p-3">1</p><button type="button" class="btn btn-secondary">+</button>
+                            </div>
+                        </div>
+                        <div class="">
+                            <h5>Slevový kód</h5>
+                            <form class="d-flex justify-content-between p-3 col-auto align-items-center">
+                                <input class="form-control d-flex" type="text" aria-label="default input example">
+                                <div class="d-flex">
+                                    <button type="submit" class="btn btn-primary mb-3">Použít</button>
+                                </div>
+                            </form>
+
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p><b>Celkem:</b>850 Kč</p>
+                            <a href="dodaci.html" class="btn btn-info p-3">Pokračovat v objednávce</a>
+                        </div>
+
                     </div>
-                    <a href="dodaci.html" class="btn btn-info p-3">Pokračovat v objednávce</a>
                 </div>
             </div>
         </div>
