@@ -62,7 +62,7 @@
                         </svg>
                         <p>Košík</p>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-none d-lg-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-2-circle" viewBox="0 0 16 16">
                             <path
@@ -78,7 +78,7 @@
                         </svg>
                         <p><b>Doprava a platba</b></p>
                     </div>
-                    <div class="d-none d-lg-flex">
+                    <div class="d-flex">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                             class="bi bi-4-circle" viewBox="0 0 16 16">
                             <path
@@ -90,64 +90,67 @@
                 </div>
 
                 <div class="d-flex p-4">
-                    <div class="p-3">
+                    <div class="p-3 row row-gap-4">
                         <h5>Doprava</h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                            <label class="form-check-label" for="flexRadioDefault1">
-                                DPD (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault1">
+                                <a>DPD</a><a>zdarma</a>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                            <label class="form-check-label" for="flexRadioDefault2">
-                                PPL (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault2">
+                                <a>PPL</a><a>zdarma</a>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                            <label class="form-check-label" for="flexRadioDefault3">
-                                Zásilkovna (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault3">
+                                <a>Zásilkovna</a><a>zdarma</a>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                            <label class="form-check-label" for="flexRadioDefault4">
-                                Balíkovna (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault4">
+                                <a>Balíkovna</a><a>zdarma</a>
                             </label>
                         </div>
                     </div>
 
-                    <div class="p-3">
+                    <div class="p-3 row row-gap-4">
                         <h5>Platba</h5>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
-                            <label class="form-check-label" for="flexRadioDefault5">
-                                Dobírka (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault5">
+                                <a>Dobírka</a><a>zdarma</a>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                            <label class="form-check-label" for="flexRadioDefault6">
-                                PayPal (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault6">
+                                <a>PayPal</a><a>zdarma</a>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
-                            <label class="form-check-label" for="flexRadioDefault7">
-                                Google Pay (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault7">
+                                <a>Google Pay</a><a>zdarma</a>
                             </label>
                         </div>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
-                            <label class="form-check-label" for="flexRadioDefault8">
-                                Platební karta (zdarma)
+                            <input class="form-check-input border border-info" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
+                            <label class="form-check-label d-flex justify-content-between" for="flexRadioDefault8">
+                                <a>Platební karta</a><a>zdarma</a>
                             </label>
                         </div>
                     </div>
                 </div>
-
-                <a href="souhrn.html" class="btn btn-info">Pokračovat v objednávce</a>
+                        
+                <div class="d-flex justify-content-between">
+                    <p><b>Celkem:</b>850 Kč (Cena bez DPH: 702,47 Kč)</p>
+                    <a href="souhrn.html" class="btn btn-info">Pokračovat v objednávce</a>
+                </div>
             </div>
         </div>
     </div>
